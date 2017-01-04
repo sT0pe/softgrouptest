@@ -4,10 +4,19 @@
 <hr/>
 
 <form action="" method="post">
-    <label>Введіть текст:</label><br/>
-    <textarea cols="120" rows="10" name="text"><?php echo $text; ?></textarea><br/><br/>
-    <input type="submit" value="Вилучити слова"/><br/><br/>
-    <input type="hidden" name="ex" value="<?php echo $content; ?>">
+    <table>
+    <tr>
+        <td><label>Ввід:</label></td>
+        <td><label>Вивід:</label></td>
+    </tr>
+    <tr>
+        <td><textarea cols="50" rows="10" name="text"><?php echo $text; ?></textarea></td>
+        <td><textarea cols="50" rows="10" name="result"><?php echo $new_text ?></textarea></td>
+    </tr>
+    <tr><td><input type="submit" value="Вилучити слова"/>
+    <input type="hidden" name="ex" value="<?php echo $content; ?>"></td>
+    </tr>
+    </table>
 </form>
 
 <div>
