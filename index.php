@@ -86,11 +86,8 @@ if (isset($_GET['ex']) && ($_GET['ex'] == 2)){
             $results[] = $words[$i];
         }
     }
-
-    $result = 'Слова найбільшої довжини: ';
-    foreach ($results as $m) {
-        $result .= $m . ' ';
-    }
+    
+    $new_text = str_replace($results, "", $text);
 
 }
 
