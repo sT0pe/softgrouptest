@@ -44,7 +44,7 @@
      */
 
     // Create a Stripe client.
-    const stripe = Stripe('pk_test_QBkvDcxEkvTqjoqiFICkuYgn');
+    const stripe = Stripe(config.stripePublishableKey);
 
     // Create an instance of Elements.
     const elements = stripe.elements();
