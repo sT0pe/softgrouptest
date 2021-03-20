@@ -11,9 +11,9 @@
 
 let apiBase;
 if (document.getElementById("Retreat")) {
-    apiBase = "https://sympel.com/spark-of-life/registration.php";
+    apiBase = "http://104.236.19.121/spark-of-life/registration.php";
 } else {
-    apiBase = "https://sympel.com/spark-of-life/index.php";
+    apiBase = "http://104.236.19.121/spark-of-life/index.php";
 }
 
 class Store {
